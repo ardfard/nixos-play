@@ -3,8 +3,7 @@
 # provider
 set -eo pipefail
 
-nix_path="${1}"
-nixos_config=$(readlink -f "${2:-./configuration.nix}")
+nixos_config=$(readlink -f ./configuration.nix)
 
 shift
 shift
