@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 # Special version of nix-build that integrates with the Terraform external
 # provider
-set -eo pipefail
+set -euo pipefail
 
 nixos_config=$(readlink -f ./configuration.nix)
 
