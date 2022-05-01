@@ -5,9 +5,6 @@ set -euo pipefail
 
 nixos_config=$(readlink -f ./configuration.nix)
 
-shift
-shift
-
 if [[ -n "$nix_path" && "$nix_path" != "-" ]]; then
   export NIX_PATH=$nix_path
 fi
