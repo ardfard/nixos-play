@@ -4,8 +4,11 @@ jobs:
   test-inside-nix:
     runs-on: ubuntu-latest
     environment: MAIN
+    permissions:
+      contents: 'read'
+      id-token: 'write'
     steps:
-    - uses: actions/checkout@v2.4.0
+    - uses: actions/checkout@v3
     - id: auth
       uses: 'google-github-actions/auth@v0'
       with: 
