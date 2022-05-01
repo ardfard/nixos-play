@@ -5,10 +5,6 @@ set -euo pipefail
 
 nixos_config=$(readlink -f ./configuration.nix)
 
-if [[ -n "$nix_path" && "$nix_path" != "-" ]]; then
-  export NIX_PATH=$nix_path
-fi
-
 args=(
   --arg configuration "$nixos_config"
   --argstr system x86_64-linux
