@@ -3,7 +3,7 @@ on: [push]
 jobs:
   test-inside-nix:
     runs-on: ubuntu-latest
-    environtment: MAIN
+    environment: MAIN
     steps:
     - uses: actions/checkout@v2.4.0
     - id: auth
