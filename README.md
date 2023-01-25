@@ -15,3 +15,7 @@ This project is an example of deploying nixos to GCP.
 * to create the infrastructure
 `pulumi up`
 
+## Reference
+https://dzone.com/articles/google-cloud-gcp-native-nixos-images-build
+https://nixos.wiki/wiki/Install_NixOS_on_GCE
+https://github.com/NixOS/nixos-org-configurations/issues/110
